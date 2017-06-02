@@ -1,28 +1,65 @@
-# video-thumb
+# media-thumb
 
-  Extract snapshots from video at a given time. Requires ffmpeg.
+  Extract snapshots from images and video at a given time. Requires ffmpeg.
+  
+  This module has been created as a fork of [Vadim Demedes' video-thumb](https://github.com/vadimdemedes/node-video-thumb) repo.
 
 # Installation
 
-```npm install video-thumb```
+```npm install media-thumb```
 
 # Usage
 
 ```
-var thumbler = require('video-thumb');
+var thumbler = require('media-thumb');
 
-thumbler.extract('video.mp4', 'snapshot.png', '00:00:22', '200x125', function(){
+//VIDEO EXAMPLE
+
+var videoOptions = {
+	time : "00:00:22",
+	size: {
+		width: 200,
+		height: 125
+	}
+}
+
+thumbler.extract('video.mp4', 'thumbnail', videoOptions, 
+
+function() {
 	
-	console.log('snapshot saved to snapshot.png (200x125) with a frame at 00:00:22');
+	console.log('thumbnail saved to thumbnail (200x125) with a frame at 00:00:22');
+	
+});
+	
+//IMAGE EXAMPLE
+	
+	
+var imageOptions = {
+	size: {
+		width: 200,
+		height: 125
+	}
+});
+
+thumbler.extract('image.png', 'snapshot.png', imageOptions, 
+
+function() {
+	
+	console.log('thumbnail saved to thumbnail (200x125)');
 
 });
 ```
+
+For more examples please see the **examples** folder.
 
 ## License 
 
 (The MIT License)
 
-Copyright (c) 2011 Vadim Demedes &lt;sbioko@gmail.com&gt;
+Copyright **media-thumb** (c) 2017 Javier Sánchez Riquelme
+&lt;xavi_hdlie@hotmail.com&gt;
+
+Copyright **video-thumb** (c) 2011 Vadim Demedes &lt;sbioko@gmail.com&gt;
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
