@@ -1,2 +1,2 @@
 
-module.exports = require('./lib/video-thumb');
+module.exports = require('./lib/media-thumb');
