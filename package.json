@@ -1,10 +1,20 @@
 {
-    "name": "video-thumb"
-  , "version": "0.0.3"
-  , "description": "Extract snapshots from video at a given time. Requires ffmpeg."
-  , "keywords": ["ffmpeg", "video", "thumb", "thumbnail", "video thumbnail"]
-  , "author": "Vadim Demedes <sbioko@gmail.com>"
-  , "dependencies": {}
-  , "main": "index"
-  , "engines": { "node": ">= 0.4" }
+  "name": "media-thumb",
+  "version": "0.0.3",
+  "description": "Extract snapshots from images and video at a given time. Requires ffmpeg.",
+  "keywords": [
+    "ffmpeg",
+    "video",
+    "image",
+    "thumb",
+    "thumbnail",
+    "video thumbnail"
+  ],
+  "author": "Javier Sánchez Riquelme <xavi_hdlie@hotmail.com>",
+  "credits": "Thank you, Vadim Demedes <sbioko@gmail.com> for node-video-thumb used as base",
+  "dependencies": {},
+  "main": "index",
+  "engines": {
+    "node": ">= 0.4"
+  }
 }
