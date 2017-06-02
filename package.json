@@ -1,7 +1,9 @@
 {
   "name": "media-thumb",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "Extract snapshots from images and video at a given time. Requires ffmpeg.",
+  "homepage": "http://xaviscript.com",
+  "repository": "xavis/node-media-thumb",
   "keywords": [
     "ffmpeg",
     "video",
